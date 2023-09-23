@@ -9,11 +9,11 @@ import (
 
 	"github.com/pkg/errors"
 
+	"github.com/AdrienEti/yip/pkg/logger"
+	"github.com/AdrienEti/yip/pkg/schema"
 	"github.com/hashicorp/go-multierror"
 	"github.com/joho/godotenv"
 	entities "github.com/mudler/entities/pkg/entities"
-	"github.com/mudler/yip/pkg/logger"
-	"github.com/mudler/yip/pkg/schema"
 	"github.com/twpayne/go-vfs"
 	passwd "github.com/willdonnelly/passwd"
 )

@@ -1,4 +1,4 @@
-module github.com/mudler/yip
+module github.com/AdrienEti/yip
 
 go 1.18
 

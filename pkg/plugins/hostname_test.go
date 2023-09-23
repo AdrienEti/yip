@@ -18,8 +18,8 @@ import (
 	"fmt"
 	"io/ioutil"
 
-	. "github.com/mudler/yip/pkg/plugins"
-	"github.com/mudler/yip/pkg/utils"
+	. "github.com/AdrienEti/yip/pkg/plugins"
+	"github.com/AdrienEti/yip/pkg/utils"
 	"github.com/twpayne/go-vfs/vfst"
 
 	. "github.com/onsi/ginkgo/v2"

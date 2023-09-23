@@ -17,20 +17,21 @@ package executor_test
 import (
 	"bytes"
 	"fmt"
-	"github.com/sanity-io/litter"
-	"github.com/twpayne/go-vfs"
 	"io"
 	"io/ioutil"
 	"log"
 	"os"
 	"path/filepath"
 
-	"github.com/mudler/yip/pkg/console"
+	"github.com/sanity-io/litter"
+	"github.com/twpayne/go-vfs"
+
+	"github.com/AdrienEti/yip/pkg/console"
 	"github.com/sirupsen/logrus"
 
-	. "github.com/mudler/yip/pkg/executor"
-	"github.com/mudler/yip/pkg/schema"
-	consoletests "github.com/mudler/yip/tests/console"
+	. "github.com/AdrienEti/yip/pkg/executor"
+	"github.com/AdrienEti/yip/pkg/schema"
+	consoletests "github.com/AdrienEti/yip/tests/console"
 	"github.com/twpayne/go-vfs/vfst"
 	"github.com/zcalusic/sysinfo"
 

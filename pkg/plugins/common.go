@@ -10,8 +10,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/mudler/yip/pkg/logger"
-	"github.com/mudler/yip/pkg/utils"
+	"github.com/AdrienEti/yip/pkg/logger"
+	"github.com/AdrienEti/yip/pkg/utils"
 	"github.com/pkg/errors"
 	"github.com/zcalusic/sysinfo"
 )
@@ -55,7 +55,7 @@ func templateSysData(l logger.Interface, s string) string {
 func download(url string) (string, error) {
 	var resp *http.Response
 	var err error
-	client:= getHttpClient()
+	client := getHttpClient()
 	for i := 0; i < 10; i++ {
 		resp, err = client.Get(url)
 		if err == nil || strings.Contains(err.Error(), "unsupported protocol scheme") {

@@ -21,11 +21,11 @@ import (
 	"os"
 	"path/filepath"
 
+	"github.com/AdrienEti/yip/pkg/logger"
+	"github.com/AdrienEti/yip/pkg/plugins"
+	"github.com/AdrienEti/yip/pkg/schema"
+	"github.com/AdrienEti/yip/pkg/utils"
 	"github.com/hashicorp/go-multierror"
-	"github.com/mudler/yip/pkg/logger"
-	"github.com/mudler/yip/pkg/plugins"
-	"github.com/mudler/yip/pkg/schema"
-	"github.com/mudler/yip/pkg/utils"
 	"github.com/spectrocloud-labs/herd"
 	"github.com/twpayne/go-vfs"
 )

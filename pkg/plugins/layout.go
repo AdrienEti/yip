@@ -10,8 +10,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/mudler/yip/pkg/logger"
-	"github.com/mudler/yip/pkg/schema"
+	"github.com/AdrienEti/yip/pkg/logger"
+	"github.com/AdrienEti/yip/pkg/schema"
 	"github.com/twpayne/go-vfs"
 )
 

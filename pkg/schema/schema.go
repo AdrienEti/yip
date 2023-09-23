@@ -24,7 +24,7 @@ import (
 
 	"github.com/google/shlex"
 
-	config "github.com/mudler/yip/pkg/schema/cloudinit"
+	config "github.com/AdrienEti/yip/pkg/schema/cloudinit"
 	"github.com/pkg/errors"
 
 	"github.com/hashicorp/go-multierror"

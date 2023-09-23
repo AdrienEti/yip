@@ -1,10 +1,10 @@
 package plugins
 
 import (
+	"github.com/AdrienEti/yip/pkg/logger"
+	"github.com/AdrienEti/yip/pkg/schema"
 	"github.com/hashicorp/go-multierror"
 	entities "github.com/mudler/entities/pkg/entities"
-	"github.com/mudler/yip/pkg/logger"
-	"github.com/mudler/yip/pkg/schema"
 	"github.com/twpayne/go-vfs"
 )
 

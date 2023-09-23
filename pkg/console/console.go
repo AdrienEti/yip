@@ -18,8 +18,8 @@ import (
 	"fmt"
 	"os/exec"
 
+	"github.com/AdrienEti/yip/pkg/logger"
 	"github.com/hashicorp/go-multierror"
-	"github.com/mudler/yip/pkg/logger"
 	"github.com/sirupsen/logrus"
 )
 

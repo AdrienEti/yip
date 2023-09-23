@@ -15,13 +15,13 @@
 package executor
 
 import (
-	"github.com/mudler/yip/pkg/logger"
-	"github.com/mudler/yip/pkg/plugins"
+	"github.com/AdrienEti/yip/pkg/logger"
+	"github.com/AdrienEti/yip/pkg/plugins"
 	"github.com/sirupsen/logrus"
 	"github.com/spectrocloud-labs/herd"
 	"github.com/twpayne/go-vfs"
 
-	"github.com/mudler/yip/pkg/schema"
+	"github.com/AdrienEti/yip/pkg/schema"
 )
 
 // Executor an executor applies a yip config

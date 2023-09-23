@@ -18,7 +18,7 @@ import (
 	"fmt"
 	"strconv"
 
-	cloudconfig "github.com/mudler/yip/pkg/schema/cloudinit"
+	cloudconfig "github.com/AdrienEti/yip/pkg/schema/cloudinit"
 	"github.com/twpayne/go-vfs"
 )
 

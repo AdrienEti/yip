@@ -17,14 +17,14 @@ package plugins
 import (
 	"path/filepath"
 
+	"github.com/AdrienEti/yip/pkg/logger"
+	"github.com/AdrienEti/yip/pkg/schema"
+	"github.com/AdrienEti/yip/pkg/utils"
 	git "github.com/go-git/go-git/v5"
 	"github.com/go-git/go-git/v5/plumbing"
 	"github.com/go-git/go-git/v5/plumbing/transport"
 	gith "github.com/go-git/go-git/v5/plumbing/transport/http"
 	ssh2 "github.com/go-git/go-git/v5/plumbing/transport/ssh"
-	"github.com/mudler/yip/pkg/logger"
-	"github.com/mudler/yip/pkg/schema"
-	"github.com/mudler/yip/pkg/utils"
 	"github.com/pkg/errors"
 	"github.com/twpayne/go-vfs"
 	"golang.org/x/crypto/ssh"

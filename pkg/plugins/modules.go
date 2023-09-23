@@ -4,11 +4,11 @@ import (
 	"bufio"
 	"strings"
 
+	"github.com/AdrienEti/yip/pkg/logger"
+	"github.com/AdrienEti/yip/pkg/schema"
 	"github.com/hashicorp/go-multierror"
-	"github.com/mudler/yip/pkg/logger"
-	"github.com/mudler/yip/pkg/schema"
-	"pault.ag/go/modprobe"
 	"github.com/twpayne/go-vfs"
+	"pault.ag/go/modprobe"
 )
 
 const (

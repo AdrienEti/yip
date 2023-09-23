@@ -20,9 +20,9 @@ import (
 	"log"
 	"os"
 
-	. "github.com/mudler/yip/pkg/plugins"
-	"github.com/mudler/yip/pkg/schema"
-	consoletests "github.com/mudler/yip/tests/console"
+	. "github.com/AdrienEti/yip/pkg/plugins"
+	"github.com/AdrienEti/yip/pkg/schema"
+	consoletests "github.com/AdrienEti/yip/tests/console"
 	"github.com/sirupsen/logrus"
 	"github.com/twpayne/go-vfs/vfst"
 

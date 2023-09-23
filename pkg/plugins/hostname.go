@@ -8,11 +8,11 @@ import (
 	"syscall"
 	"time"
 
+	"github.com/AdrienEti/yip/pkg/logger"
+	"github.com/AdrienEti/yip/pkg/schema"
+	"github.com/AdrienEti/yip/pkg/utils"
 	"github.com/denisbrodbeck/machineid"
 	"github.com/hashicorp/go-multierror"
-	"github.com/mudler/yip/pkg/logger"
-	"github.com/mudler/yip/pkg/schema"
-	"github.com/mudler/yip/pkg/utils"
 	uuid "github.com/satori/go.uuid"
 	"github.com/twpayne/go-vfs"
 )
