@@ -20,12 +20,26 @@ func NewCloudConfig(contents string) (*CloudConfig, error) {
 }
 
 func IsCloudConfig(userdata string) bool {
-	header := strings.SplitN(userdata, "\n", 2)[0]
+	// Get the first 10 lines
+	headers := strings.SplitN(userdata, "\n", 10)
 
-	// Trim trailing whitespaces
-	header = strings.TrimRightFunc(header, unicode.IsSpace)
+	// iterate over them as there could be comments or the jinja template info:
+	// https://cloudinit.readthedocs.io/en/latest/explanation/instancedata.html#example-cloud-config-with-instance-data
 
-	return (header == "#cloud-config")
+	for _, line := range headers {
+		// Trim trailing whitespaces
+		header := strings.TrimRightFunc(line, unicode.IsSpace)
+		// If it starts with a hash check it, in case its a huge line, we dont want to waste time
+		if strings.HasPrefix(header, "#") {
+			// NOTE: we also allow "legacy" headers. Should only allow #cloud-config at
+			// some point.
+			if (header == "#cloud-config") || (header == "#kairos-config") || (header == "#node-config") {
+				return true
+			}
+		}
+	}
+
+	return false
 }
 
 // CloudConfig encapsulates the entire cloud-config configuration file and maps
